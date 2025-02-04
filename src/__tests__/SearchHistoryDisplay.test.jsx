@@ -86,7 +86,7 @@ describe('SearchHistoryDisplay', () => {
       expect(mockProps.addSearchHistory).toHaveBeenCalledWith({
         name: mockWeatherData.name,
         country: mockWeatherData.sys.country,
-        datetime: mockWeatherData.dt
+        datetime: Math.floor(Date.now() / 1000)
       });
     });
   });

@@ -26,7 +26,7 @@ const SearchHistoryDisplay = ({ searchHistory, clearSearchHistory, onWeatherData
       addSearchHistory({ 
         name: weatherData.name, 
         country: weatherData.sys.country, 
-        datetime: weatherData.dt 
+        datetime: Math.floor(Date.now() / 1000)
       });
     } catch (error) {
       onWeatherData({ 

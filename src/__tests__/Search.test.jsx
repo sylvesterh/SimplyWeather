@@ -100,7 +100,7 @@ describe('Search Component', () => {
       expect(mockAddSearchHistory).toHaveBeenCalledWith({
         name: 'London',
         country: 'GB',
-        datetime: 1234567890
+        datetime: Math.floor(Date.now() / 1000)
       });
     });
   });
