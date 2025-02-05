@@ -21,6 +21,19 @@ cd simply-weather
 npm install
 ```
 
+## 🔍 Prerequisites
+
+- Node.js 18.0 or higher
+- OpenWeather API key (get one at https://openweathermap.org/api)
+
+## 🔑 Environment Setup
+
+1. Create a `.env` file in the root directory
+2. Add your OpenWeather API key:
+```sh
+VITE_WEATHER_API_KEY=your_api_key_here
+```
+
 ## 🔧 Scripts
 
 Run the following commands for different tasks:
@@ -49,6 +62,9 @@ Run the following commands for different tasks:
   ```sh
   npm run coverage
   ```
+
+## 🖼️ Preview
+![SimplyWeather Screenshot](./public/screenshot.png)
 
 ## 📁 Project Structure
 
